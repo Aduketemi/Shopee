@@ -1,0 +1,100 @@
+<app-search-bar></app-search-bar>
+<section class="hero">
+    <div class="hero-container">
+        <div class="slide slide-one">
+            <img src="assets/images/pexels-karolina-grabowska-4.jpg" class="slide-image" alt="">
+            <div class="slide-text">
+                <h5>#FASHION DAY</h5>
+                <h2>80% OFF</h2>
+                <p>Discover fashion that suits to your style</p>
+                <button>Check this out</button>
+            </div>
+            <div class="stepProgressContainer ">
+                <div class="stepProgress1 progressActive"></div>
+                <div class="stepProgress2"></div>
+            </div>
+        </div>
+        <div class="slide slide-two">
+            <img src="assets/images/hero-3.png" class="slide-image" alt="">
+            <div class="slide-text slide-text-two">
+                <h5>#BEAYTYSALE</h5>
+                <h2>DISCOVER OUR BEAUTY SELECTION</h2>
+                <button>Check this out</button>
+            </div>
+            <div class="stepProgressContainer ">
+                <div class="stepProgress1"></div>
+                <div class="stepProgress2 progressActive"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu-section">
+    <div class="menu">
+        <div class="sub-menu">
+            <div class="sub-menu-icon">
+                <i class="fa-solid fa-table-cells-large menu-icon"></i>
+            </div>
+            <p>Category</p>
+        </div>
+        <div class="sub-menu">
+            <div class="sub-menu-icon">
+                <i class="fa-solid fa-jet-fighter-up menu-icon"></i>
+            </div>
+            <p>Flight</p>
+        </div>
+        <div class="sub-menu">
+            <div class="sub-menu-icon">
+                <i class="fa-solid fa-file-invoice-dollar menu-icon"></i>
+            </div>
+            <p>Bill</p>
+        </div>
+        <div class="sub-menu">
+            <div class="sub-menu-icon">
+                <i class="fa-solid fa-globe menu-icon"></i>
+            </div>
+            <p>Data Plan</p>
+        </div>
+        <div class="sub-menu">
+            <div class="sub-menu-icon">
+                <i class="fa-solid fa-mobile-screen-button menu-icon"></i>
+            </div>
+            <p>Top up</p>
+        </div>
+    </div>
+    <div class="menuStepProgressContainer">
+        <div class="stepProgress1 progressActive"></div>
+        <div class="stepProgress2"></div>
+    </div>
+</section>
+
+<section>
+    <div class="catalogue-section">
+        <div class="catalogue-header">
+            <h4>Best Sale Product</h4>
+            <a href="">See more</a>
+        </div>
+        <div class="catalogue">
+            <ng-container *ngFor="let item of count">
+                <div class="catalogue-card" (click)="goToDetails(item)">
+                    <div class="catalogue-card-image-container">
+                        <img src="{{item.imageLink}}" class="slide-image" alt="">
+                        <i class="fa-regular fa-heart catalogue-heart"></i>
+                    </div>
+                    <div class="catalogue-card-text-container">
+                        <p>Shirt</p>
+                        <h5>Essential Men's Short-Sleeve Crewneck T-Shirt</h5>
+                        <div class="catalogue-card-details">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.0/2386</p>
+                            </div>
+                            <p>$18.00</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</section>
+<app-nav></app-nav>

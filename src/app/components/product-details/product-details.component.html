@@ -1,0 +1,340 @@
+<nav class="product-nav-container topshadow">
+    <div class="product-nav-back">
+        <i class="fa-solid fa-chevron-left"></i>
+    </div>
+    <div class="product-nav-icons">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+        <div class="search-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p class="search-icon-tag">1</p>
+        </div>
+    </div>
+</nav>
+
+<section>
+    <div class="product-image">
+        <div class="product-image-container">
+            <div class="product-image-inner-container">
+                <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+            </div>
+        </div>
+        <div class="product-small-images">
+            <div class="product-small-image p-i-1">
+                <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+            </div>
+            <div class="product-small-image p-i-2">
+                <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+            </div>
+            <div class="product-small-image p-i-3">
+                <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+            </div>
+            <div class="product-small-image p-i-4">
+                <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="product-details">
+        <div class="product-owner">
+            <i class="fa-solid fa-store"></i>
+            <p>tokobaju.id</p>
+        </div>
+        <h3>Essential Men's Short-Sleeve Crewneck T-Shirt</h3>
+        <div class="product-tag">
+            <div class="tag">
+                <i class="fa-solid fa-star"></i>
+                <p>4.9 Ratings</p>
+            </div>
+            <i class="fa-solid fa-circle"></i>
+            <div class="tag">
+                <p>2.3k+ Reviews</p>
+            </div>
+            <i class="fa-solid fa-circle"></i>
+            <div class="tag">
+                <p>2.9k+ Sold</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="product-about">
+        <div class="product-tabs">
+            <button class="user tablinks active">About item</button>
+            <button class="company tablinks">Reviews</button>
+        </div>
+        <div class="product-about-text">
+            <div class="about-text">
+                <p>Brand: <span> ChAmkpR</span></p>
+                <p>Category: <span> Casual Shirt</span></p>
+                <p>Condition: <span> New</span></p>
+            </div>
+            <div class="about-text">
+                <p>Color: <span> Aprikot</span></p>
+                <p>Material: <span> Polyester</span></p>
+                <p>Heavy: <span> 200 g</span></p>
+            </div>
+        </div>
+        <hr>
+    </div>
+</section>
+
+<section>
+    <div class="product-description">
+        <h4>Description</h4>
+        <div class="description-list">
+            <ul>
+                <li>Long sleeve dress shirt in classic fit featuring button down collar</li>
+                <li>Patch pocket on left chest</li>
+                <li>Double combination cotton fabric</li>
+                <li>Comfortable and quality dress shirt</li>
+                <li>Go to classic button down shirt for all special occasions</li>
+            </ul>
+        </div>
+        <p>Chat us if there is anything you need to ask about the product</p>
+
+        <div class="description-see-less">
+            <a href="">See less</a>
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <hr>
+    </div>
+</section>
+
+<section>
+    <div class="shipping">
+        <h4>Shippings Information:</h4>
+        <div class="product-about-text">
+            <div class="about-text">
+                <p>Delivery: <span> Shipping from Jakata Indonesia</span></p>
+                <p>Shipping: <span> FREE International Shipping</span></p>
+                <p>Arrive: <span> Estimated arrival on 25-27 Oct 2023</span></p>
+            </div>
+        </div>
+        <hr>
+    </div>
+</section>
+
+<section>
+    <div class="seller">
+        <h4>Seller Information:</h4>
+        <div class="seller-info">
+            <div class="seller-logo">
+                <p>Thrifting Store.</p>
+            </div>
+            <div class="seller-details">
+                <h3>Thrifting_Store</h3>
+                <p>Active 5 Min ago  |  96.7% Positive Feedback</p>
+                <button>
+                    <i class="fa-solid fa-store"></i>
+                    Visit store
+                </button>
+            </div>
+        </div>
+        <hr>
+    </div>
+</section>
+
+<section>
+    <div class="reviews">
+        <h4>Reviews & Ratings</h4>
+        <div class="review-ratings">
+            <div class="review-star">
+                <h2>4.9 <span>/5.0</span></h2>
+                <div class="ratings-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <p>2.3k+ Reviews</p>
+            </div>
+            <div class="review-feedback">
+                <div *ngFor="let item of stars" class="feedback">
+                    <i class="fa-solid fa-star"></i>
+                    <p class="grey">{{item.no}}</p>
+                    <div class="review-progress-bar">
+                        <div class="review-progress1"></div>
+                        <div class="review-progress2" [ngStyle]="{'width': item.percent}"></div>
+                    </div>
+                    <p>{{item.count}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="review-media">
+        <h4>Reviews with images & videoa</h4>
+        <div class="review-reels">
+            <div class="review-reel-container">
+                <div class="review-media-image p-i-1">
+                    <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+                </div>
+                <div class="review-media-image p-i-2">
+                    <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+                </div>
+                <div class="review-media-image p-i-3">
+                    <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+                </div>
+                <div class="review-media-image p-i-4">
+                    <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+</section>
+
+<section>
+    <div class="top-reviews">
+        <h4>Top Reviews</h4>
+        <div class="top-review">
+            <p>Showing 3 of 2.5k+ reviews</p>
+            <div class="top-review-select">
+                <select class="top-review-select-input" name="" id="">
+                    <option selected value="">Popular</option>
+                </select>
+                <!-- <i class="fa-solid fa-chevron-down"></i> -->
+            </div>
+        </div>
+
+        <div class="review-comments">
+            <div class="review-comment-header">
+                <div class="review-comment-pic">
+                    <div class="review-picture">
+                        <img src="assets/images/profile.png" alt="">
+                    </div>
+                    <p>Eren Y***,</p>
+                </div>
+                <div class="review-comment-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <p class="rate-bold">5.0</p>
+                    <p>***</p>
+                </div>
+            </div>
+            <div class="review-tags">
+                <div class="bodyTag">
+                    <p>Good delivery</p>
+                </div>
+                <div class="bodyTag">
+                    <p>Fast response</p>
+                </div>
+                <div class="bodyTag">
+                    <p>Good condition</p>
+                </div>
+            </div>
+            <p>According to my expectations. This is the best. Thank you</p>
+            <div class="helpful">
+                <div class="helpful-icon">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <p>Helpful?</p>
+                </div>
+                <p>Yesterday</p>
+            </div>
+
+        </div>
+        <hr>
+
+        <div class="review-comments">
+            <div class="review-comment-header">
+                <div class="review-comment-pic">
+                    <div class="review-picture">
+                        <img src="assets/images/profile.png" alt="">
+                    </div>
+                    <p>Eren Y***,</p>
+                </div>
+                <div class="review-comment-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <p class="rate-bold">5.0</p>
+                    <p>***</p>
+                </div>
+            </div>
+            <div class="review-tags">
+                <div class="bodyTag">
+                    <p>Good delivery</p>
+                </div>
+                <div class="bodyTag">
+                    <p>Fast response</p>
+                </div>
+                <div class="bodyTag">
+                    <p>Good condition</p>
+                </div>
+            </div>
+            <p>According to my expectations. This is the best. Thank you</p>
+            <div class="helpful">
+                <div class="helpful-icon">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <p>Helpful?</p>
+                </div>
+                <p>Yesterday</p>
+            </div>
+
+        </div>
+        <hr>
+
+        <div class="pagination">
+            <div class="page">
+                <i class="fa-solid fa-chevron-left"></i>
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>...</p>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <p>See more</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="recommendation">
+        <div class="rec-header">
+            <h4>Recommendation</h4>
+            <p>See more</p>
+        </div>
+        <div class="catalogue">
+            <ng-container *ngFor="let item of count">
+                <div class="catalogue-card">
+                    <div class="catalogue-card-image-container">
+                        <img src="{{item.imageLink}}" class="slide-image" alt="">
+                        <i class="fa-regular fa-heart catalogue-heart"></i>
+                    </div>
+                    <div class="catalogue-card-text-container">
+                        <p>Shirt</p>
+                        <h5>Essential Men's Short-Sleeve Crewneck T-Shirt</h5>
+                        <div class="catalogue-card-details">
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <p>4.0/2386</p>
+                            </div>
+                            <p>$18.00</p>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-container shadow">
+    <div class="footer-menu">
+        <p>Total Price</p>
+        <h4>$18.00</h4>
+    </div>
+    <div class="footer-menu">
+        <button class="footer-button-one">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p>1</p>
+        </button>
+        <button class="footer-button-two">
+            Buy Now
+        </button>
+    </div>
+</footer>
+

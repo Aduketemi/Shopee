@@ -104,6 +104,7 @@ button {
     border-radius: 8px;
     width: 100%;
     font-size: 1rem;
+    color: var(--dark);
 }
 
 .fa-magnifying-glass{
@@ -773,7 +774,7 @@ a{
 .select-icon{
     position: absolute;
     left: 75%;
-    top: 30%;
+    top: 35%;
     font-size: small;
     border-color: var(--dark-grey);
 }
@@ -916,6 +917,10 @@ a{
     margin-bottom: 4rem;
 }
 
+.extraBottomPadding{
+    margin-bottom: 6rem;
+}
+
 .footer-container{
     position: fixed;
     bottom: 0%;
@@ -968,7 +973,7 @@ a{
 
 hr{
     height: 1px;
-    background-color: var(--grey);
+    background-color: var(--imagebg);
     border: none;
 }
 

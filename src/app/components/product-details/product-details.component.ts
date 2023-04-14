@@ -54,6 +54,7 @@ export class ProductDetailsComponent implements OnInit {
       {imageLink: 'assets/images/shirt22-removebg-preview.png'},
       {imageLink: 'assets/images/shirt-removebg-preview.png'},
     ]
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   goBack(){

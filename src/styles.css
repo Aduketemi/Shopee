@@ -51,6 +51,31 @@ body {
     background-color: #f5f5f5;
 }
 
+select {
+    background-image: none;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -o-appearance: none !important;
+}
+
+[type="search"] {
+    outline-offset: -2px;
+    -webkit-appearance: none;
+}
+  
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+button {
+    border-image: none !important;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -o-appearance: none !important;
+}
+
 /* search */
 
 .search-container{
@@ -70,7 +95,7 @@ body {
 
 .search-search{
     position: relative;
-    width: 80%;
+    width: 75%;
 }
 
 .search-search-input, .top-review-select-input{
@@ -124,10 +149,17 @@ body {
 
 .nav-menu p{
     margin: .2rem 0;
+    color: var(--dark-grey);
+    font-size: small;
+    font-weight: bold;
 }
 
 .active-menu{
     color: var(--green);
+}
+
+.menu-active{
+    color: var(--dark) !important;
 }
 
 /* Hero */
@@ -142,7 +174,7 @@ body {
     overflow-x: scroll;
     overflow-y: hidden;
     position: relative;
-    scroll-snap-type: x proximity;
+    scroll-snap-type: x mandatory;
     /* scroll-padding: 100%; */
     display: flex;
 }
@@ -261,6 +293,7 @@ body {
 
   .sub-menu-icon{
       background-color: var(--light);
+      border-radius: 6px;
       width: 30px;
       height: 30px;
       margin: 0 auto;
@@ -312,11 +345,7 @@ a{
     grid-template-columns: repeat(auto-fit, calc(50% - .5rem));
     column-gap: 1rem;
     row-gap: 2rem;
-}
-
-.catalogue-card{
-    /* width: calc(calc(100% - 2rem) \ 2); */
-    /* flex-wrap: wrap; */
+    margin-bottom: 5rem;
 }
 
 .catalogue-card:hover{
@@ -408,12 +437,13 @@ a{
 
 .product-image{
     position: relative;
+    margin-top: 4.5rem;
 }
 
 .product-image-container{
     background-color: var(--imagebg);
     margin: 2rem 1rem 1rem 1rem;
-    padding: 2rem 2rem .5rem 2rem;
+    padding: .5rem 2rem;
 }
 
 .product-image-inner-container{
@@ -431,8 +461,8 @@ a{
 
 .product-small-images{
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: 5%;
+    left: 8%;
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
@@ -440,14 +470,16 @@ a{
 }
 
 .product-small-image{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
     background-color: var(--grey);
 }
 
 .product-small-image img{
     width: 100%;
     height: 100%;
+    border-radius: 6px;
     object-fit: cover;
     object-position: 0% 100%;
 }
@@ -478,8 +510,12 @@ a{
     color: var(--grey);
 }
 
-.product-details h3{
+.product-owner p{
     margin: 0;
+}
+
+.product-details h3{
+    margin: .5rem 0;
 }
 
 .product-tag{
@@ -507,7 +543,7 @@ a{
 
 .product-about{
     padding:  0 1rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
 }
 
 .product-tabs{
@@ -545,7 +581,7 @@ a{
 .product-about-text{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-bottom: 1rem;
 }
 
@@ -600,13 +636,13 @@ a{
 
 .seller-info{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
 .seller-logo{
-    background-color: var(--grey);
+    background-color: var(--imagebg);
     border-radius: 50%;
     width: 80px;
     height: 80px;
@@ -627,7 +663,8 @@ a{
 .seller-details button{
     border: 1px solid var(--green);
     color: var(--green);
-    padding: .5rem 1rem;
+    font-weight: bold;
+    padding: .5rem 1.2rem;
     background-color: white;
     border-radius: 6px;
 }
@@ -636,8 +673,9 @@ a{
 
 .review-ratings{
     display: flex;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
+    /* gap: 1rem; */
+    margin-bottom: 2rem;
+    justify-content: space-around;
 }
 
 .review-star h2{
@@ -651,6 +689,10 @@ a{
 .review-star span{
     color: var(--grey);
     font-size: smaller;
+}
+
+.review-stars{
+    color: var(--dark-grey);
 }
 
 .feedback{
@@ -699,12 +741,14 @@ a{
 .review-media-image{
     width: 60px;
     height: 60px;
+    border-radius: 12px;
     background-color: var(--grey);
 }
 
 .review-media-image img{
     width: 100%;
     height: 100%;
+    border-radius: 12px;
     /* object-fit: cover;
     object-position: 0% 100%; */
 }
@@ -719,6 +763,22 @@ a{
 .top-review p{
     color: var(--dark-grey);
     font-size: small;
+}
+
+.top-review-select{
+    position: relative;
+}
+
+.select-icon{
+    position: absolute;
+    left: 75%;
+    top: 30%;
+    font-size: small;
+    border-color: var(--dark-grey);
+}
+
+.top-review-select-input{
+    padding-left: 1rem;
 }
 
 .review-comment-header{
@@ -756,6 +816,10 @@ a{
     gap: .5rem;
 }
 
+.review-comment-rate p{
+    padding-top: .1rem;
+}
+
 .rate-bold{
     font-weight: bold;
 }
@@ -779,7 +843,7 @@ a{
 
 .bodyTag p{
     font-size: 10px;
-    line-height: 8px;
+    line-height: 2px;
 }
 
 .review-comments{
@@ -803,9 +867,10 @@ a{
     gap: .5rem;
     color: var(--green);
     font-weight: bold;
+    font-size: small;
 }
 
-.helpful p{
+.helpful > p{
     color: var(--grey);
     font-size: small;
 }
@@ -814,7 +879,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 
 .pagination > p{
@@ -826,7 +891,7 @@ a{
 .page{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.8rem;
     font-size: small;
 }
 
@@ -853,7 +918,7 @@ a{
 .footer-container{
     position: fixed;
     bottom: 0%;
-    padding: 1rem 1.2rem;
+    padding: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -877,7 +942,7 @@ a{
 
 .footer-button-one{
     background-color: var(--green);
-    height: 40px;
+    height: 50px;
     width: 60px;
     padding-left: 1rem;
     color: white;
@@ -893,11 +958,17 @@ a{
 
 .footer-button-two{
     background-color: var(--dark);
-    height: 40px;
+    height: 50px;
     width: 100px;
     color: white;
     border: none;
     border-radius: 0 6px 6px 0;
+}
+
+hr{
+    height: 1px;
+    background-color: var(--grey);
+    border: none;
 }
 
 .shadow{

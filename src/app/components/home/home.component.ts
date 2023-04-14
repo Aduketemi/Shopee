@@ -19,10 +19,10 @@ export class HomeComponent implements OnInit {
     this.count = [
       {imageLink: 'assets/images/shirt-removebg-preview.png'},
       {imageLink: 'assets/images/shirt22-removebg-preview.png'},
-      {imageLink: 'assets/images/shirt-removebg-preview.png'},
       {imageLink: 'assets/images/shirt22-removebg-preview.png'},
       {imageLink: 'assets/images/shirt-removebg-preview.png'},
       {imageLink: 'assets/images/shirt22-removebg-preview.png'},
+      {imageLink: 'assets/images/shirt-removebg-preview.png'},
     ]
   }
 

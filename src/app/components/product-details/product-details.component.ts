@@ -17,7 +17,7 @@ export class ProductDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    if(!history.state.item){
+    if(!history.state.item && !this.item){
       // this.location.back()
     }else{
       this.item = history.state.item
@@ -51,9 +51,13 @@ export class ProductDetailsComponent implements OnInit {
     ]
 
     this.count = [
-      {imageLink: 'assets/images/shirt-removebg-preview.png'},
       {imageLink: 'assets/images/shirt22-removebg-preview.png'},
+      {imageLink: 'assets/images/shirt-removebg-preview.png'},
     ]
+  }
+
+  goBack(){
+    history.back()
   }
 
 }

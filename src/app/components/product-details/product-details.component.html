@@ -1,5 +1,5 @@
 <nav class="product-nav-container topshadow">
-    <div class="product-nav-back">
+    <div class="product-nav-back" (click)="goBack()">
         <i class="fa-solid fa-chevron-left"></i>
     </div>
     <div class="product-nav-icons">
@@ -16,21 +16,21 @@
     <div class="product-image">
         <div class="product-image-container">
             <div class="product-image-inner-container">
-                <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+                <img src="{{item?.imageLink || 'assets/images/shirt-removebg-preview.png'}}" class="slide-image" alt="">
             </div>
         </div>
         <div class="product-small-images">
             <div class="product-small-image p-i-1">
-                <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+                <img src="{{item?.imageLink || 'assets/images/shirt-removebg-preview.png'}}" class="slide-image" alt="">
             </div>
             <div class="product-small-image p-i-2">
-                <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+                <img src="{{item?.imageLink || 'assets/images/shirt-removebg-preview.png'}}" class="slide-image" alt="">
             </div>
             <div class="product-small-image p-i-3">
-                <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+                <img src="{{item?.imageLink || 'assets/images/shirt-removebg-preview.png'}}" class="slide-image" alt="">
             </div>
             <div class="product-small-image p-i-4">
-                <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+                <img src="{{item?.imageLink || 'assets/images/shirt-removebg-preview.png'}}" class="slide-image" alt="">
             </div>
         </div>
     </div>
@@ -170,20 +170,20 @@
 
 <section>
     <div class="review-media">
-        <h4>Reviews with images & videoa</h4>
+        <h4>Reviews with images & video</h4>
         <div class="review-reels">
             <div class="review-reel-container">
                 <div class="review-media-image p-i-1">
-                    <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+                    <img src="{{item?.imageLink || 'assets/images/shirt-removebg-preview.png'}}" class="slide-image" alt="">
                 </div>
                 <div class="review-media-image p-i-2">
-                    <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+                    <img src="{{item?.imageLink || 'assets/images/shirt-removebg-preview.png'}}" class="slide-image" alt="">
                 </div>
                 <div class="review-media-image p-i-3">
-                    <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+                    <img src="{{item?.imageLink || 'assets/images/shirt-removebg-preview.png'}}" class="slide-image" alt="">
                 </div>
                 <div class="review-media-image p-i-4">
-                    <img src="{{'assets/images/shirt-removebg-preview.png' || item.imageLink}}" class="slide-image" alt="">
+                    <img src="{{item?.imageLink || 'assets/images/shirt-removebg-preview.png'}}" class="slide-image" alt="">
                 </div>
             </div>
         </div>
@@ -200,7 +200,7 @@
                 <select class="top-review-select-input" name="" id="">
                     <option selected value="">Popular</option>
                 </select>
-                <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                <i class="fa-solid fa-chevron-down select-icon"></i>
             </div>
         </div>
 
@@ -215,7 +215,7 @@
                 <div class="review-comment-rate">
                     <i class="fa-solid fa-star"></i>
                     <p class="rate-bold">5.0</p>
-                    <p>***</p>
+                    <p class="review-stars">***</p>
                 </div>
             </div>
             <div class="review-tags">
@@ -252,7 +252,7 @@
                 <div class="review-comment-rate">
                     <i class="fa-solid fa-star"></i>
                     <p class="rate-bold">5.0</p>
-                    <p>***</p>
+                    <p class="review-stars">***</p>
                 </div>
             </div>
             <div class="review-tags">
